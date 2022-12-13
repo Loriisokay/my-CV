@@ -1,0 +1,333 @@
+$accent-color: #001d3d;
+$active-color: #3a0ca3;
+$active-color2: #480ca8;
+$hover-color: #caf0f8;
+$button-color: #003566;
+$button-hover: #90e0ef;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+}
+
+.main_page {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between
+
+}
+
+.aside {
+    width: 30%;
+    background-color: $accent-color;
+    justify-self: right;
+}
+
+.main {
+    width: 70%;
+    margin: 80px 60px 20px 90px;
+}  
+
+.my_photo {
+    width: 100%;
+}
+
+.name {
+    color: $accent-color;
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+.contacts {
+    color: white;
+    padding: 20px;
+    font-size: 32px;
+}
+
+.contact_list {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+
+.contact_list {
+    li {
+        padding: 0 0 10px 20px;
+        align-items: baseline;
+    }  
+}
+
+.contact_list {
+    li {
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.contact_list {
+    li {
+        a:active {
+            color: $active-color;
+        }
+    }
+}
+
+.contact_list {
+    li {
+        a:hover{
+            color: $hover-color;
+        }
+    }
+    
+}
+
+.contact_list {
+    li:hover {
+        color: $hover-color;
+    }
+    
+}
+
+.icon {
+    width: 25px;
+    align-content: center;
+    padding-right: 5px;
+}
+
+
+.main_page_button {
+    width: 50%;
+    height: 5%;
+    margin: 10px 0 0 20px;
+    background-color: $hover-color;
+    border: 0.5px solid $button-color;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.main_page_button {
+    a {
+        text-decoration: none;
+        font-size: 18px;
+        color: $accent-color;
+    }
+
+}
+
+.main_page_button:hover {
+    background-color: $button-hover;
+}
+
+.main_page_button > a:hover, .experience > li > a:hover {
+    color: $active-color;
+}
+
+.main_page_button {
+    a:active{
+        color: $active-color2;
+    } 
+}
+
+.heading {
+    color: $accent-color;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+hr {
+    border-top: solid 1.5px $accent-color;
+}
+
+p, .skills, .education {
+    padding: 10px 0 30px 0;
+}
+
+.skills {
+    li {
+        list-style: url('/img/check.svg');
+        margin-left: 12px;
+    }
+}
+
+.experience {
+    li {
+        list-style-image: url('/img/code.svg');
+        padding-top: 5px;
+        margin-left: 12px; 
+    }
+}
+
+.experience {
+    li {
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.education > li, .languages > li {
+    padding-top: 5px;
+    margin-left: 17px;
+}
+
+.languages {
+    margin-bottom: 50px;
+    list-style-type: square;
+}
+
+.form_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('img/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: #FFF;
+}
+
+.form_title {
+    font-size: 36px;
+    margin: 40px 0 40px 0;
+}
+
+.form_description {
+    font-size: 24px;
+    font-style: italic;
+    margin: 10px 0 20px 0;
+}
+
+.form_description {
+    a {
+        text-decoration: none;
+        color: mintcream;
+    }
+}
+
+.form_description {
+    a:hover {
+        color: $active-color2;
+    } 
+}
+
+.form_description {
+    a:active {
+        color: $hover-color;
+    }
+}
+
+fieldset {
+    background-color: #edf2f4;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.6px);
+    -webkit-backdrop-filter: blur(10.6px);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: 10px;
+}
+
+legend {
+    padding: 10px;
+    color:#FFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+label {
+    padding: 10px;
+}
+
+#company, #tel, #email, #address {
+    width: 70%;
+    font-style: italic;
+}
+
+h4 {
+    margin-left: 4px;
+    font-weight: 400;
+}
+
+select, textarea {
+    width: 70%;
+    margin: 20px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+textarea {
+    font-style: italic;
+}
+
+#submit {
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0 50px 0;
+    background-color: $button-color;
+    border: 0.5px solid $button-color;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #edf2f4;
+    font-size: 18px;
+}
+
+#submit:hover {
+    background-color: $button-hover;
+    color:$accent-color;
+}
+
+input, textarea, select {
+    border-radius: 0;
+    border: 1px solid $button-color;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid $accent-color;  
+}
+
+option, select {
+    font-style: italic;
+}
+
+.required_skills {
+    input {
+        border: 1px solid $button-color;
+    }
+}
+
+#email, #address, #company, #tel {
+    height: 25px;
+}
+
+#email::placeholder, #address::placeholder, #company::placeholder, #tel::placeholder, textarea::placeholder {
+    padding-left: 5px;
+}

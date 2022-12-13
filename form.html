@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Employment form</title>
+</head>
+<body class="form_page">
+    <h1 class="form_title">Employment form</h1>
+    <h2 class="form_description">A form to hire an ideal <a href="index.html">employee</a></h2>
+    <form action="#">
+        <fieldset class="contact">
+            <legend>Contact information</legend>
+            <label for="company" id="company-label">Company
+                <input type="text" id="company" placeholder="Enter company's name">
+            </label>
+            <label for="tel" id="tel_label">Contact number
+                <input type="text" id="tel" placeholder="Enter a contact number">
+            </label>
+            <label for="email" id="email_label">E-mail
+                <input type="email" id="email" placeholder="Enter an e-mail">
+            </label>
+            <label for="address" id="address_label">Address
+                <input type="text" id="address" placeholder="Enter a location">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Job requirements and qualifications</legend>
+            <h4>Required skills</h4>
+            <label for="html" name="required_skills" class="required_skills"><input type="checkbox" name="html" id="html" value="html" class="inline"> HTML </label>
+            <label for="html" name="required_skills" class="required_skills"><input type="checkbox" name="css" id="css" value="css" class="inline"> CSS </label>
+            <label for="html" name="required_skills" class="required_skills"><input type="checkbox" name="js" id="js" value="js" class="inline"> JavaScript </label>
+            <h4>Frameworks</h4>
+            <label for="frameworks"><input type="radio" name="react-angular" id="react" value="react"> React </label> 
+            <label for="frameworks"><input type="radio" name="react-angular" id="angular" value="angular"> Angular </label>
+        </fieldset>
+        <fieldset>
+            <legend for="dropdown">Salary & Projects</legend>
+            <h4>Salary range</h4>
+            <select name="dropdown" id="dropdown">
+                <option value="">Select a salary range</option>
+                <option value="250000">250.000 - 300.000</option>
+                <option value="350000">350.000 - 450.000</option>
+                <option value="45000+">450.000+</option>
+            </select>
+            <h4 for="projects"> Company's current projects: <br>
+                <textarea name="c_projects" id="c_projects" cols="30" rows="10" placeholder="Currently, we've been working on..."></textarea>
+            </h4>
+        </fieldset>
+        <input type="submit" name="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
